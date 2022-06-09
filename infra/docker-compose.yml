@@ -1,0 +1,13 @@
+version: "3.4"
+
+services:
+  opa:
+    image: openpolicyagent/opa:latest
+    ports:
+      - "8181:8181"
+    command:
+      - run
+      - --server
+      - --addr=:8181
+      - --log-format=json-pretty
+      - --set=decision_logs.console=true
