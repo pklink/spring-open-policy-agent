@@ -5,5 +5,5 @@ default allow := false
 allow {
     input.method == "GET"
     input.path == "/hello"
-    input.user == "bernie"
+    input.user == "gordon"
 }

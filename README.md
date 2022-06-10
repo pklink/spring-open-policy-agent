@@ -22,7 +22,7 @@ During the startup, the `src/main/resources/policies/hello.rego` policy will exp
 
 ```
 curl --location --request GET 'http://localhost:8080/hello' \
---header 'X-Username: bernie'
+--header 'X-Username: gordon'
 ```
 
 ```
@@ -34,11 +34,26 @@ Hi!
 ```
 
 
-### 403
+### 403 - User has no access
 
 ```
 curl --location --request GET 'http://localhost:8080/hello' \
---header 'X-Username: not-bernie'
+--header 'X-Username: kate'
+```
+
+```
+HTTP/1.1 403 Forbidden
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 3
+ 
+:-(
+```
+
+### 403 - User doesn't exist
+
+```
+curl --location --request GET 'http://localhost:8080/hello' \
+--header 'X-Username: homer'
 ```
 
 ```
