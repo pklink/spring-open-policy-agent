@@ -9,10 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>net.einself</groupId>
-    <artifactId>opa-spring</artifactId>
+    <artifactId>opa-service-in-controller</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>opa-spring</name>
-    <description>opa-spring</description>
+    <name>opa-service-in-controller</name>
     <properties>
         <java.version>17</java.version>
     </properties>
