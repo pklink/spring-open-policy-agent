@@ -16,7 +16,7 @@ mvn spring-boot:run
 
 During the startup, the `src/main/resources/policies/hello.rego` policy will export to the OPA server via REST-API automatically
 
-## Fire some request
+## Fire some requests
 
 ### 200
 
